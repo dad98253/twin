@@ -7,6 +7,13 @@ pkglibexecdir = $(pkglibdir)
 pkgdata_DATA       = BUGS COPYING COPYING.LIB Changelog.txt INSTALL README README.porting twin-current.lsm
 pkglibexec_SCRIPTS = system.twenvrc.sh system.twinrc
 
+distclean-local:
+	@rm config.status configure config.log
+	@rm Makefile
+	@rm -r autom4te.cache/
+	@rm aclocal.m4
+	@rm Makefile.in
+
 install-exec-hook:
 	@if echo "$(host_triplet)" | $(GREP) linux >/dev/null 2>&1 ; then \
 	  CMD_LDCONFIG="ldconfig" ; \
