@@ -11,3 +11,5 @@ sudo make install
 sudo ldconfig
 sudo chmod o+rx /usr/local/lib/twin
 sudo chmod o+rx /usr/local/lib/twin/*
+sudo chmod 755  /usr/local/share/man/man1
+sudo chmod 755  /usr/local/share/twin
