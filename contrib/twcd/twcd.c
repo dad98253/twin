@@ -39,13 +39,13 @@ byte InitTWCD(void) {
   TWCD_Menu =
       TwCreateMenu(TCOL(tblack, twhite), TCOL(tblack, tgreen), TCOL(thigh | tblack, twhite),
                    TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
+/*                   TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
                    TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
                    TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
                    TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
                    TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
                    TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
-                   TCOL(thigh | tblack, tblack), TCOL(tred, twhite), TCOL(tred, tgreen), (byte)0);
-
+*/
                    TwInfo4Menu(TWCD_Menu, TW_ROW_ACTIVE, (uldat)8, " Twin CD ", "ppppppttp");
 
                    TWCD_Win = TwCreateWindow(
